@@ -12,14 +12,14 @@ import torch
 dataset = WIKILARGE_DATASET
 args_dict = dict(
     model_name='t5-base',
-    max_seq_length=256,
+    max_seq_length=128,
     learning_rate=3e-4,
     weight_decay=0.1,
     adam_epsilon=1e-8,
     warmup_steps=5,
     train_batch_size=6,
     valid_batch_size=6,
-    num_train_epochs=5,
+    num_train_epochs=3,
     custom_loss=False,   
     gradient_accumulation_steps=1, #16
     n_gpu=torch.cuda.device_count(),
