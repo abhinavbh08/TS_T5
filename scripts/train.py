@@ -30,7 +30,7 @@ args_dict = dict(
     seed=12,
     nb_sanity_val_steps=0,
     train_sample_size=1, # 1 = 100%, 0.5 = 50%
-    valid_sample_size=1, 
+    valid_sample_size=0.5, 
 )
 
 features_kwargs = {

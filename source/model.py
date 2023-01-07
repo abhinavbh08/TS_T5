@@ -361,7 +361,7 @@ def train(train_args):
         monitor="val_loss",
         verbose=True,
         mode="min",
-        save_top_k=5
+        save_top_k=1
     )
 
     train_params = dict(
